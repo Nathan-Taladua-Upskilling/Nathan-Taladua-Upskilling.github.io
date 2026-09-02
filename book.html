@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book a Session — ABC Tutoring</title>
+  <meta name="description" content="Request a tutoring session with ABC Tutoring. Pick a tutor, an open time, and send your details." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" />ABC Tutoring</a>
+      <nav class="site-nav" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="tutors.html">Our Tutors</a>
+        <a href="book.html">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <p><a href="tutors.html">&larr; Back to tutors</a></p>
+        <h1>Book a session</h1>
+        <p class="muted">Fill this out and Dana will confirm by email. Choosing a time also
+          reserves it on ABC Tutoring's calendar.</p>
+
+        <div id="form-error" class="notice notice-warn hidden" role="alert"></div>
+
+        <form id="booking-form" class="card">
+          <div class="form-grid">
+            <div class="field">
+              <label for="tutor">Tutor</label>
+              <select id="tutor" name="tutor" required>
+                <option value="">Choose a tutor…</option>
+              </select>
+            </div>
+
+            <div id="tutor-panel" class="tutor-panel hidden"></div>
+
+            <div class="row-2">
+              <div class="field">
+                <label for="parentName">Parent's name</label>
+                <input id="parentName" name="parentName" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="parentEmail">Parent's email</label>
+                <input id="parentEmail" name="parentEmail" type="email" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="row-2">
+              <div class="field">
+                <label for="studentFirstName">Student's first name</label>
+                <input id="studentFirstName" name="studentFirstName" type="text" required />
+              </div>
+              <div class="field">
+                <label for="studentEmail">Student's email</label>
+                <input id="studentEmail" name="studentEmail" type="email" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="subject">Requested subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject…</option>
+              </select>
+              <input id="subject-other" name="subjectOther" type="text"
+                     class="hidden" placeholder="Which subject?" />
+            </div>
+
+            <div class="row-2">
+              <div class="field">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required />
+              </div>
+              <div class="field">
+                <label for="time">Time</label>
+                <select id="time" name="time" required>
+                  <option value="">Pick a tutor and date first</option>
+                </select>
+                <span id="time-hint" class="hint"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="notes">Anything Dana should know? <span class="muted">(optional)</span></label>
+              <textarea id="notes" name="notes"></textarea>
+            </div>
+
+            <button id="submit-btn" type="submit" class="btn btn-primary btn-block">Send booking request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year></span> ABC Tutoring</span>
+      <span><a href="progress.html">Dana's progress view</a></span>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

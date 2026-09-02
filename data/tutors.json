@@ -1,0 +1,76 @@
+{
+  "tutors": [
+    {
+      "id": "jordan-lee",
+      "name": "Jordan Lee",
+      "color": "#F2A365",
+      "gradeLevels": "Grades 6–12",
+      "subjects": ["Algebra", "Geometry", "Pre-Calculus"],
+      "email": "jordan@abctutoring.com",
+      "phone": "(555) 010-1123",
+      "blurb": "Makes math feel like a puzzle worth solving. Patient with test anxiety.",
+      "availability": [
+        { "day": "Monday", "slots": ["4:00 PM", "5:00 PM", "6:00 PM"] },
+        { "day": "Wednesday", "slots": ["4:00 PM", "5:00 PM", "6:00 PM"] },
+        { "day": "Saturday", "slots": ["10:00 AM", "11:00 AM", "12:00 PM"] }
+      ]
+    },
+    {
+      "id": "priya-shah",
+      "name": "Priya Shah",
+      "color": "#8AC6A2",
+      "gradeLevels": "Grades 9–12",
+      "subjects": ["Biology", "Chemistry", "AP Science Prep"],
+      "email": "priya@abctutoring.com",
+      "phone": "(555) 010-2246",
+      "blurb": "Turns dense science chapters into clear, memorable diagrams.",
+      "availability": [
+        { "day": "Tuesday", "slots": ["3:30 PM", "4:30 PM", "5:30 PM"] },
+        { "day": "Thursday", "slots": ["3:30 PM", "4:30 PM", "5:30 PM"] }
+      ]
+    },
+    {
+      "id": "marcus-bell",
+      "name": "Marcus Bell",
+      "color": "#E8A0BF",
+      "gradeLevels": "Grades 3–8",
+      "subjects": ["Reading", "Writing", "Essay Skills"],
+      "email": "marcus@abctutoring.com",
+      "phone": "(555) 010-3358",
+      "blurb": "Helps younger students find their voice and actually enjoy writing.",
+      "availability": [
+        { "day": "Monday", "slots": ["3:00 PM", "4:00 PM"] },
+        { "day": "Friday", "slots": ["3:00 PM", "4:00 PM"] }
+      ]
+    },
+    {
+      "id": "elena-ruiz",
+      "name": "Elena Ruiz",
+      "color": "#F6C453",
+      "gradeLevels": "Grades K–5",
+      "subjects": ["Early Math", "Early Reading", "Homework Help"],
+      "email": "elena@abctutoring.com",
+      "phone": "(555) 010-4471",
+      "blurb": "Warm and playful. Builds confidence for the youngest learners.",
+      "availability": [
+        { "day": "Wednesday", "slots": ["1:00 PM", "2:00 PM", "3:00 PM"] },
+        { "day": "Thursday", "slots": ["1:00 PM", "2:00 PM", "3:00 PM"] },
+        { "day": "Saturday", "slots": ["9:00 AM", "10:00 AM"] }
+      ]
+    },
+    {
+      "id": "sam-okafor",
+      "name": "Sam Okafor",
+      "color": "#7FB5C4",
+      "gradeLevels": "Grades 6–12",
+      "subjects": ["Spanish", "Conversation Practice"],
+      "email": "sam@abctutoring.com",
+      "phone": "(555) 010-5584",
+      "blurb": "Keeps sessions in real conversation so the language sticks.",
+      "availability": [
+        { "day": "Tuesday", "slots": ["4:00 PM", "5:00 PM"] },
+        { "day": "Friday", "slots": ["4:00 PM", "5:00 PM", "6:00 PM"] }
+      ]
+    }
+  ]
+}

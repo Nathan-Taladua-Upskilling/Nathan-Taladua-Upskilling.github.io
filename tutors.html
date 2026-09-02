@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Tutors — ABC Tutoring</title>
+  <meta name="description" content="Browse ABC Tutoring's tutors: subjects, grade levels, weekly availability, and contact details." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" />ABC Tutoring</a>
+      <nav class="site-nav" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="tutors.html">Our Tutors</a>
+        <a href="book.html">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <h1>Our tutors</h1>
+        <p class="muted">Each card shows what a tutor teaches, the grades they work with,
+          when they're available, and how to reach them. When you're ready, tap
+          <strong>Book</strong> to request a time.</p>
+
+        <div class="filter-bar">
+          <label for="subject-filter"><strong>Filter by subject:</strong></label>
+          <select id="subject-filter">
+            <option value="">All subjects</option>
+          </select>
+        </div>
+
+        <div id="tutor-list" class="grid cols-3">
+          <p class="muted">Loading tutors…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year></span> ABC Tutoring</span>
+      <span><a href="progress.html">Dana's progress view</a></span>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/tutors.js"></script>
+</body>
+</html>

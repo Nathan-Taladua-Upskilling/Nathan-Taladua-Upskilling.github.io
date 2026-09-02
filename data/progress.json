@@ -1,0 +1,48 @@
+{
+  "note": "Sample data for Dana's private view. Replace with real records. Use initials or a code for each student, and keep this repository private if it will hold real student data. A private Google Sheet is a good alternative once there are many students.",
+  "students": [
+    {
+      "alias": "A.M.",
+      "subject": "Algebra I",
+      "tutor": "Jordan Lee",
+      "records": [
+        { "label": "Sep", "grade": 68 },
+        { "label": "Oct", "grade": 74 },
+        { "label": "Nov", "grade": 79 },
+        { "label": "Dec", "grade": 86 }
+      ]
+    },
+    {
+      "alias": "R.T.",
+      "subject": "Biology",
+      "tutor": "Priya Shah",
+      "records": [
+        { "label": "Sep", "grade": 72 },
+        { "label": "Oct", "grade": 71 },
+        { "label": "Nov", "grade": 80 },
+        { "label": "Dec", "grade": 88 }
+      ]
+    },
+    {
+      "alias": "K.D.",
+      "subject": "5th Grade Reading",
+      "tutor": "Elena Ruiz",
+      "records": [
+        { "label": "Sep", "grade": 2.6 },
+        { "label": "Nov", "grade": 3.1 },
+        { "label": "Jan", "grade": 3.8 }
+      ]
+    },
+    {
+      "alias": "L.P.",
+      "subject": "Spanish II",
+      "tutor": "Sam Okafor",
+      "records": [
+        { "label": "Sep", "grade": 77 },
+        { "label": "Oct", "grade": 82 },
+        { "label": "Nov", "grade": 85 },
+        { "label": "Dec", "grade": 91 }
+      ]
+    }
+  ]
+}

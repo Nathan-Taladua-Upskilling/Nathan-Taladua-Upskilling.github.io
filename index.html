@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ABC Tutoring — friendly tutoring for every grade</title>
+  <meta name="description" content="ABC Tutoring pairs students with warm, patient tutors. Browse tutors and book a session in minutes." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" />ABC Tutoring</a>
+      <nav class="site-nav" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="tutors.html">Our Tutors</a>
+        <a href="book.html">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Kind, patient tutoring<br />for every grade.</h1>
+        <p>ABC Tutoring pairs your student with a tutor who fits their subject, their
+           schedule, and their pace. Browse tutors and book a session in minutes.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tutors.html">Meet the tutors</a>
+          <a class="btn btn-ghost" href="book.html">Book a session</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <div class="grid cols-3 steps">
+          <div class="card step">
+            <h3>Browse tutors</h3>
+            <p class="muted mt-0">See each tutor's subjects, grade levels, availability,
+              and contact details on one page.</p>
+          </div>
+          <div class="card step">
+            <h3>Pick a time</h3>
+            <p class="muted mt-0">Choose an open slot from your tutor's weekly
+              availability and send a booking request.</p>
+          </div>
+          <div class="card step">
+            <h3>Dana confirms</h3>
+            <p class="muted mt-0">Dana gets your request right away and confirms the
+              session by email. The time is added to ABC Tutoring's calendar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>This week's availability</h2>
+        <p class="muted">Booked sessions show as busy here, so you can see open time at a glance.</p>
+        <div id="calendar-slot">
+          <div class="calendar-placeholder">
+            The shared ABC Tutoring calendar will appear here once it is connected.
+            <br />See <code>docs/SETUP.md</code>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap center">
+        <h2>Ready to get started?</h2>
+        <p class="muted">It takes about two minutes.</p>
+        <a class="btn btn-accent" href="book.html">Book a session</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year></span> ABC Tutoring</span>
+      <span><a href="progress.html">Dana's progress view</a></span>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script>
+    ABC.getConfig().then(function (cfg) {
+      if (!cfg.googleCalendarEmbedSrc) return;
+      var slot = document.getElementById('calendar-slot');
+      slot.innerHTML = '';
+      var f = document.createElement('iframe');
+      f.className = 'calendar-embed';
+      f.src = cfg.googleCalendarEmbedSrc;
+      f.title = 'ABC Tutoring shared calendar';
+      f.loading = 'lazy';
+      slot.appendChild(f);
+    });
+  </script>
+</body>
+</html>

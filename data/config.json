@@ -1,0 +1,9 @@
+{
+  "businessName": "ABC Tutoring",
+  "tagline": "Friendly, focused tutoring for every grade.",
+  "danaEmail": "danaai@example.com",
+  "formEndpoint": "https://formsubmit.co/ajax/danaai@example.com",
+  "sessionLengthMinutes": 60,
+  "googleCalendarEmbedSrc": "",
+  "googleCalendarShareLink": ""
+}

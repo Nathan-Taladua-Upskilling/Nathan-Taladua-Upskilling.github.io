@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request Sent — ABC Tutoring</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="" />ABC Tutoring</a>
+      <nav class="site-nav" aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="tutors.html">Our Tutors</a>
+        <a href="book.html">Book a Session</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <div class="big-check" aria-hidden="true">&check;</div>
+        <h1 class="center">Booking request sent</h1>
+
+        <div id="status-box" class="notice notice-info"></div>
+
+        <div class="card">
+          <h2>Session details</h2>
+          <table class="summary">
+            <tbody id="summary-body"></tbody>
+          </table>
+
+          <div id="calendar-actions">
+            <p class="muted">Add this session to the ABC Tutoring calendar so the time shows as booked:</p>
+            <div class="action-row">
+              <a id="gcal-link" class="btn btn-primary" href="#" target="_blank" rel="noopener">Add to Google Calendar</a>
+              <a id="ics-link" class="btn btn-ghost" href="#">Download .ics</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="center" style="margin-top:1.5rem">
+          <a class="btn btn-ghost" href="tutors.html">Book another session</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year></span> ABC Tutoring</span>
+      <span><a href="progress.html">Dana's progress view</a></span>
+    </div>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/confirmed.js"></script>
+</body>
+</html>
